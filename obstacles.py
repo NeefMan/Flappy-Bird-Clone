@@ -28,6 +28,5 @@ class Pipe(Sprite):
             self.main.score += 1
             self.can_score = False
         
-        """if self.rect.x in self.main.bird.x_vals:"""
         self.main.check_collision(self.main.bird.bird_collision_rect, self.rect)
             
