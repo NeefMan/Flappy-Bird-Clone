@@ -4,7 +4,7 @@ class Settings:
         self.screen_width = 500
         self.screen_height = 800
         self.screen_size = (self.screen_width, self.screen_height)
-        self.fps = 1000
+        self.fps = 60
         self.clock = pygame.time.Clock()
         self.gravity = 3.5
         self.jump_vel = -25
