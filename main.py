@@ -162,7 +162,7 @@ class Main:
         time.sleep(0.8)
         self.game_running = False
         self.bird.reset()
-        self.reset_game()
+        self.reset_game() 
 
     def reset_game(self):
         self.bird.reset()

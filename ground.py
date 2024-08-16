@@ -17,4 +17,10 @@ class Ground(Sprite):
                 self.main.floor_tiles.remove(tile)
             self.main.initialize_ground()
         
-        self.main.check_collision(self.main.bird.bird_collision_rect, self.rect)
+        self.main.check_collision(pygame.rect.Rect(
+            self.main.bird.x_pos,
+            self.main.bird.y_pos,
+            100,
+            self.main.bird.image.get_height()
+        ),
+        self.rect)

@@ -77,6 +77,7 @@ class Bird(SpriteSheet):
         self.cur_vel = self.settings.gravity
         self.rotation = 0
         self.bird_collision_rect = None
+        self.x_vals = {num for num in range(self.settings.screen_width//2-120, self.settings.screen_width//2-100+100)}
         self.update_collision_rect()
 
         # values for get_rotation() function
